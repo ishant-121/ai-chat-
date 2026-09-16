@@ -18,7 +18,7 @@ def ask_groq(message):
     return response.choices[0].message.content
 
 
-def ask_ollama(message):
+#def ask_ollama(message):
     response = ollama.chat(
         model="qwen3:8b",
         messages=[{"role": "user", "content": message}]
