@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My AI Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+
+        <div id="input-area">
+            <select id="model-select">
+                <option value="groq">Groq</option>
+                <option value="ollama">Ollama (Local)</option>
+            </select>
+
+            <input type="text" id="user-input" placeholder="Type a message...">
+
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
